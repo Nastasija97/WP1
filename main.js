@@ -1,28 +1,66 @@
-// Set the date we're counting down to
-var countDownDate = new Date("Dec 9, 2021 23:00:00").getTime();
+//dynamic navigation
+const navigationList = [
+ {
+ "text": "Aurora8",
+ "link": "#aurora8",
+ "class":"navbar_links"
+ },
+ {
+ "text": "Sirious Ultra",
+ "link": "#sirious_ultra",
+ "class":"navbar_links"
+ },
+ {
+ "text": "Capella",
+ "link": "##capella",
+ "class":"navbar_links"
+ },
+ {
+ "text": "Home",
+ "link": "/",
+ "class":"navbar_links"
+ },
+ {
+ "text": "Contact",
+ "link": "#contact",
+ "class":"navbar_links"
+ }
+];
+function populateNavigation () {
 
-// Update the count down every 1 second
-var x = setInterval(function() {
+ function createLink(linkData){
+ //Kreiraj a tag i dodeli mu href atribut i tekst
+ var aElement = document.createElement("a");
+ aElement.innerText = linkData.text;
+ aElement.href = linkData.link;
+ aElement.className=linkData.class;
+ //Kreiraj li element i dodaj mu a tag kao child
+ var linkElement = document.createElement("li");
+ linkElement.appendChild(aElement);
+ return linkElement;
+ }
 
-  // Get todays date and time
-  var now = new Date().getTime();
+ var navigationUl = document.getElementById("navbar_menu");
+ for (var i = 0; i < navigationList.length; i++) {
+ navigationUl.appendChild(createLink(navigationList[i]));
+ }
 
-  // Find the distance between now an the count down date
-  var distance = countDownDate - now;
+}
+populateNavigation();
 
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  // Display the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
 
-  // If the count down is finished, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
+
+
+
+
+
+
+
+var menu=document.querySelector('#mobile-menu');
+var menuLinks=document.querySelector('.navbar_menu');
+
+menu.addEventListener('click',function(){
+  menu.classList.toggle('is-active');
+  menuLinks.classList.toggle('active');
+});
