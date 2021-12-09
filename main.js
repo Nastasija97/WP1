@@ -49,34 +49,8 @@ function populateNavigation () {
 }
 populateNavigation();
 
-//glassy hover animation
 
-//line under nav items via jquerry
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//buttons animation
+//mobile navigation
 
 
 var menu=document.querySelector('#mobile-menu');
