@@ -2,17 +2,17 @@
 const navigationList = [
  {
  "text": "Aurora8",
- "link": "#aurora8",
+ "link": "/aurora8.html",
  "class":"navbar_links"
  },
  {
  "text": "Sirious Ultra",
- "link": "#sirious_ultra",
+ "link": "/siriousultra.html",
  "class":"navbar_links"
  },
  {
  "text": "Capella",
- "link": "##capella",
+ "link": "/capella.html",
  "class":"navbar_links"
  },
  {
@@ -44,10 +44,14 @@ function populateNavigation () {
  for (var i = 0; i < navigationList.length; i++) {
  navigationUl.appendChild(createLink(navigationList[i]));
  }
+ 
 
 }
 populateNavigation();
 
+//glassy hover animation
+
+//line under nav items via jquerry
 
 
 
@@ -55,6 +59,24 @@ populateNavigation();
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//buttons animation
 
 
 var menu=document.querySelector('#mobile-menu');
