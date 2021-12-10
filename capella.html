@@ -44,7 +44,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
-  <body>
+  <body id="scroll_body">
     <!--Navbar section-->
     <nav class="navbar">
       <div class="navbar_container">
@@ -66,23 +66,25 @@
         </ul>
       </div>
     </nav>
-    <!--Hero Section-->
+    <!--Rocket Section-->
+<div id="slider">
+  <ul class="slides">
+    <li class="slide"><img src="images/explore-g75535f327_1920.jpg" alt="">
+    </li>
+    <li class="slide"><img src="images/futuristic-temple-gc7c5d2e0b_1920.jpg" alt=""></li>
+    <li class="slide"><img src="images/eat-gda9497f15_1920.jpg" alt=""></li>
+    <li class="slide"><img src="images/satellite-gfab39bc6f_1920.jpg" alt=""></li>
+    <li class="slide"><img src="images/explore-g75535f327_1920.jpg" alt=""></li>
 
-    <div class="main">
-      <div class="main_container">
-        <div class="main_content">
-          <h1>Making Impossible, Possible.</h1>
-          <h2>HUMAN LIFE IS NOW MULTIPLANETARY.</h2>
-          <p>
-            Building on the achievements of Aurora8 and Sirious Ultra, Alfa
-            Cosmix is launching next generation of fully reusable space rockets
-            that will be the most powerful ever built, capable of carrying
-            humans to Mars and other destinations in the solar system.
-          </p>
-          <button class="main_btn"><a href="/">Fly To Space</a></button>
-        </div>
-      </div>
-    </div>
+  </ul>
+</div>
+<div class="single_rocket">
+  <h1>Capella</h1>
+  <p>Capella spacecraft is capable of carrying up to 7 passengers to and from Earth orbit, and beyond. It is the only spacecraft currently flying that is capable of returning significant amounts of cargo to Earth, and is the first private spacecraft to take humans to the space station.</p>
+  <p>Capella spacecraft is equipped with 16 Draco thrusters used to orient the spacecraft during the mission, including apogee/perigee maneuvers, orbit adjustment and attitude control. Each Draco thruster is capable of generating 90 pounds of force in the vacuum of space.</p>
+</div>
+ 
+  
 
   
     <!--Footer Section-->
@@ -94,34 +96,36 @@
             <a href="/">How it works</a>
             <a href="/">Test</a>
             <a href="/">Careers</a>
-            <a href="/">INvestments</a>
+            <a href="/">Investments</a>
             <a href="/">Terms And Services</a>
           </div>
-          <div class="footer_link-items">
-            <h2>About Us</h2>
-            <a href="/">How it works</a>
-            <a href="/">Test</a>
-            <a href="/">Careers</a>
-            <a href="/">INvestments</a>
-            <a href="/">Terms And Services</a>
+          <div class="footer_link-items" id="contact">
+            <h2>Contact Us</h2>
+            <a href="/">Book Flight</a>
+            <a href="/">Rss</a>
+            <a href="/docs.pdf"
+              ><i class="fas fa-file-pdf"></i>&nbsp;Documentation</a
+            >
+            <a href="/author.html"><i class="far fa-user"></i>&nbsp;Author</a>
+            <a href="/"><i class="fas fa-sitemap"></i>&nbsp;Sitemap</a>
           </div>
         </div>
         <div class="footer_link-wrapper">
           <div class="footer_link-items">
-            <h2>About Us</h2>
-            <a href="/">How it works</a>
-            <a href="/">Test</a>
-            <a href="/">Careers</a>
-            <a href="/">INvestments</a>
+            <h2>Info</h2>
+            <a href="/">History</a>
+            <a href="/">Our Clients</a>
+            <a href="/">Our Goals</a>
+            <a href="/">Our Crew</a>
             <a href="/">Terms And Services</a>
           </div>
           <div class="footer_link-items">
-            <h2>About Us</h2>
-            <a href="/">How it works</a>
-            <a href="/">Test</a>
-            <a href="/">Careers</a>
-            <a href="/">INvestments</a>
-            <a href="/">Terms And Services</a>
+            <h2>More</h2>
+            <a href="/">Missions</a>
+            <a href="/">Launches</a>
+            <a href="/">Data</a>
+            <a href="/">Improvements</a>
+            <a href="/">Shop</a>
           </div>
         </div>
       </div>
@@ -155,7 +159,10 @@
         </div>
       </div>
     </div>
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <script src="main.js"></script>
+
   </body>
 </html>

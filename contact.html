@@ -66,11 +66,75 @@
         </ul>
       </div>
     </nav>
-    <!--Hero Section-->
+    <!--form section-->
 
-  
+    <div id="bookingForm">
+      <form method="post">
+        <div class="form-group">
+          <label for="tbEmail" class="fontsmall">Email address</label>
+          <input
+            type="email"
+            class="fontsmall"
+            id="tbEmail"
+            placeholder="Your email"
+            autocomplete="off"
+          />
+          <span class="errorMessage fontsmall">examplename@example.com</span>
+        </div>
+        <div class="form-group">
+          <label for="ddlNumber" class="fontsmall">Number of people:</label>
+          <select name="ddlNumber" id="ddlNumber" class="fontsmall"></select>
+          <span class="errorMessage fontsmall">You must choose an option.</span>
+        </div>
+        <div class="form-group">
+          <label for="ddlYear" class="font-small">Date:</label>
+          <div id="ddlDateDiv">
+            16
+            <select
+              name="ddlYear"
+              id="ddlYear"
+              class="fontsmall ddlDate"
+            ></select>
+            <select
+              name="ddlMonth"
+              id="ddlMonth"
+              class="fontsmall ddlDate"
+            ></select>
+            <select
+              name="ddlDay"
+              id="ddlDay"
+              class="fontsmall ddlDate"
+            ></select>
+          </div>
+          <span id="dateError" class="errorMessage fontsmall"
+            >You must choose a date.</span
+          >
+        </div>
+        <div class="form-group">
+          <label for="ddlDestination" class="fontsmall">Destination:</label>
+          <select name="ddlDestination" id="ddlDestination" class="f ont-small">
+            <option value="0">Choose</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+          <span class="errorMessage fontsmall"
+            >You must choose a destination.</span
+          >
+        </div>
+        <input
+          type="button"
+          id="btnSubmitForm"
+          name="btnSubmitForm"
+          v
+          alue="Submit"
+          class="font-small uppercase"
+        />
+      </form>
+    </div>
 
-  
     <!--Footer Section-->
     <div class="footer_container">
       <div class="footer_links">
@@ -141,6 +205,8 @@
         </div>
       </div>
     </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <script src="main.js"></script>
   </body>

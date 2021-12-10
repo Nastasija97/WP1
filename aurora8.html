@@ -44,7 +44,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
-  <body>
+  <body id="scroll_body">
     <!--Navbar section-->
     <nav class="navbar">
       <div class="navbar_container">
@@ -66,23 +66,41 @@
         </ul>
       </div>
     </nav>
-    <!--Hero Section-->
+    <!--Rocket Section-->
+<div id="slider">
+  <ul class="slides">
+    <li class="slide"><img src="images/pexels-priscilla-7572705.jpg" alt="">
+    </li>
+    <li class="slide"><img src="images/pexels-spacex-586059.jpg" alt=""></li>
+    <li class="slide"><img src="images/space-walk-g16f2e7dac_1920.jpg" alt=""></li>
+    <li class="slide"><img src="images/international-space-station-gda0396261_1920.jpg" alt=""></li>
+    <li class="slide"><img src="images/pexels-priscilla-7572705.jpg" alt=""></li>
 
-    <div class="main">
-      <div class="main_container">
-        <div class="main_content">
-          <h1>Making Impossible, Possible.</h1>
-          <h2>HUMAN LIFE IS NOW MULTIPLANETARY.</h2>
-          <p>
-            Building on the achievements of Aurora8 and Sirious Ultra, Alfa
-            Cosmix is launching next generation of fully reusable space rockets
-            that will be the most powerful ever built, capable of carrying
-            humans to Mars and other destinations in the solar system.
-          </p>
-          <button class="main_btn"><a href="/">Fly To Space</a></button>
-        </div>
-      </div>
-    </div>
+  </ul>
+</div>
+<div class="single_rocket">
+  <h1>Aurora8</h1>
+<p>The Aurora8 prototype descended under 
+  active aerodynamic control, accomplished by in
+  dependent movement of two forward and two aft fl
+  aps on the vehicle. All four flaps were actuated by 
+  an onboard flight computer to control Aurora8’s attitude 
+  during flight and enabled precise landing at the intended l
+  ocation. SN15’s Raptor engines reignited as the vehicle per
+  formed the landing flip maneuver immediately before touchin
+  g down for a nominal landing on the pad.</p>
+<p>Aurora8 will enter Mars’ atmosphere at 7.5 
+  kilometers per second and decelerate aerodynamically.
+   The vehicle’s heat shield is designed to withstand multiple 
+   entries, but given that the vehicle is coming into Mars'
+    atmosphere so hot, we still expect to see some ablation 
+    
+    of the heat shield (similar to wear and tear on a brake 
+    pad). The engineering video below simulates the physics of
+     Mars entry for Aurora8.</p>
+</div>
+ 
+  
 
   
     <!--Footer Section-->
@@ -94,34 +112,36 @@
             <a href="/">How it works</a>
             <a href="/">Test</a>
             <a href="/">Careers</a>
-            <a href="/">INvestments</a>
+            <a href="/">Investments</a>
             <a href="/">Terms And Services</a>
           </div>
-          <div class="footer_link-items">
-            <h2>About Us</h2>
-            <a href="/">How it works</a>
-            <a href="/">Test</a>
-            <a href="/">Careers</a>
-            <a href="/">INvestments</a>
-            <a href="/">Terms And Services</a>
+          <div class="footer_link-items" id="contact">
+            <h2>Contact Us</h2>
+            <a href="/">Book Flight</a>
+            <a href="/">Rss</a>
+            <a href="/docs.pdf"
+              ><i class="fas fa-file-pdf"></i>&nbsp;Documentation</a
+            >
+            <a href="/author.html"><i class="far fa-user"></i>&nbsp;Author</a>
+            <a href="/"><i class="fas fa-sitemap"></i>&nbsp;Sitemap</a>
           </div>
         </div>
         <div class="footer_link-wrapper">
           <div class="footer_link-items">
-            <h2>About Us</h2>
-            <a href="/">How it works</a>
-            <a href="/">Test</a>
-            <a href="/">Careers</a>
-            <a href="/">INvestments</a>
+            <h2>Info</h2>
+            <a href="/">History</a>
+            <a href="/">Our Clients</a>
+            <a href="/">Our Goals</a>
+            <a href="/">Our Crew</a>
             <a href="/">Terms And Services</a>
           </div>
           <div class="footer_link-items">
-            <h2>About Us</h2>
-            <a href="/">How it works</a>
-            <a href="/">Test</a>
-            <a href="/">Careers</a>
-            <a href="/">INvestments</a>
-            <a href="/">Terms And Services</a>
+            <h2>More</h2>
+            <a href="/">Missions</a>
+            <a href="/">Launches</a>
+            <a href="/">Data</a>
+            <a href="/">Improvements</a>
+            <a href="/">Shop</a>
           </div>
         </div>
       </div>
@@ -155,7 +175,10 @@
         </div>
       </div>
     </div>
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <script src="main.js"></script>
+
   </body>
 </html>
