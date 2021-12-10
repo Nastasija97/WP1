@@ -310,14 +310,14 @@
   background-color: #2e1c3d;
   background-image: linear-gradient(to right,#fff 0%,#6b696d 100%);
   background-size: 100%;
-
-  font-size: 4rem;
+  margin-top: 2rem;
+  font-size: 3rem;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color:transparent;
 
-  text-shadow: 0 0 1px rgb(232, 205, 241);
+  text-shadow: 0 0 1px rgb(244, 241, 245);
 }
 
 .single_rocket_container{
@@ -417,7 +417,7 @@
   }
 
   .single_rocket h1{
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-top: 12rem;
 
   }
@@ -431,9 +431,13 @@
   }
 
 .single_rocket h1{
-    font-size: 2rem;
-  text-align: center;
+   
+
+    text-align: center;
     
+  }
+  .single_rocket h1 {
+    font-size: 2rem;
   }
   .single_rocket_card{
     width: 100%;
@@ -484,12 +488,12 @@
 
 @media screen and(max-width:480px) {
   .main_content h1{
-    font-size: 2rem;
-    margin-top: 2rem;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
   }
 
   .main_content h2{
-    font-size: 2rem;
+    font-size: 1.5rem;
 
   }
   .main_content p{
@@ -519,7 +523,7 @@
   background-color: #2e1c3d;
   background-image: linear-gradient(to right,#fff 0%,#6b696d 100%);
   background-size: 100%;
-  margin-bottom: 3rem;
+  margin-top: 2rem;
   font-size: 4rem;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -619,7 +623,7 @@
   }
 
 .rockets h1{
-    font-size: 2rem;
+    font-size: 1rem;
   text-align: center;
     
   }
@@ -899,6 +903,7 @@ body {
   width: 500px;
   margin: auto;
   margin-top: 30vh;
+  color: whitesmoke;
 }
 #ddlDateDiv{
   display:-webkit-box;
@@ -1051,7 +1056,10 @@ body {
      opacity: 0.8;
      width: 70%;
     margin: auto;
-     
+   
+   }
+   p.description{
+    width: auto;
    }
    @media screen and (max-width: 960px) {   
        #slider{

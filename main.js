@@ -22,7 +22,7 @@ const navigationList = [
  },
  {
  "text": "Contact",
- "link": "#contact",
+ "link": "contact.html",
  "class":"navbar_links"
  }
 ];
@@ -119,3 +119,9 @@ document.getElementById("capella").onclick = function () {
 document.getElementById("seriousUltra").onclick = function () {
   location.href = "siriousultra.html";
 };
+
+var buttonForm=document.getElementById("ticket_form");
+buttonForm.onclick = function () {
+  location.href = "contact.html";
+};
+
