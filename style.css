@@ -29,8 +29,9 @@
   padding: 0 50px;
 }
 #navbar_logo {
-  background-color: #ff4599;
-  background-image: linear-gradient(to top, whitesmoke 0%, #356323 100%);
+  background-color: #141414;
+  background-image: linear-gradient(to top, whitesmoke 0%, #34243a 100%);
+  text-shadow: 0 0 2px rgb(244 241 245);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -41,6 +42,8 @@
   cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
+  
+  
 }
 
 .fa-galactic-senate {
@@ -611,8 +614,9 @@
   align-items: center;
 }
 #footer_logo {
-  background-color: #fff;
-  background-image: linear-gradient(to top, whitesmoke 0%, #356323 100%);
+  background-color: #141414;
+  background-image: linear-gradient(to top, whitesmoke 0%, #34243a 100%);
+  text-shadow: 0 0 2px rgb(244 241 245);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
