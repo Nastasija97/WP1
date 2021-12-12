@@ -2,17 +2,17 @@
 const navigationList = [
  {
  "text": "Aurora8",
- "link": "/aurora8.html",
+ "link": "aurora8.html",
  "class":"navbar_links"
  },
  {
  "text": "Sirious Ultra",
- "link": "/siriousultra.html",
+ "link": "siriousultra.html",
  "class":"navbar_links"
  },
  {
  "text": "Capella",
- "link": "/capella.html",
+ "link": "capella.html",
  "class":"navbar_links"
  },
  {
@@ -64,20 +64,21 @@ menu.addEventListener('click',function(){
 //mobile navigation
 
 //slider animation JQuery
-$(function(){
+$(function()
+{
   //config
   var width=720;
   var animationSpeed=1000;
   var pause=3000;
-//cache DOM
-var $slider=$('#slider');
-var $slideContainer=$slider.find('.slides');
-var $slides=$slideContainer.find('.slide');
-var currentSlide=1;
-//defining interval here because of var function scope 
-var interval;
-function startSlider()
-{
+ //cache DOM
+ var $slider=$('#slider');
+ var $slideContainer=$slider.find('.slides');
+ var $slides=$slideContainer.find('.slide');
+ var currentSlide=1;
+ //defining interval here because of var function scope 
+ var interval;
+ function startSlider()
+ {
      interval= setInterval(function()
     {
         $slideContainer.animate(
@@ -106,10 +107,10 @@ $slider.on('mouseenter',stopSlider).on('mouseleave',startSlider);
   //resume on mouseleave
 startSlider();
 });
-
 //slider animation JQuery
 
 //button function
+
 document.getElementById("aurora8").onclick = function () {
   location.href = "aurora8.html";
 };
@@ -121,7 +122,7 @@ document.getElementById("seriousUltra").onclick = function () {
 };
 
 var buttonForm=document.getElementById("ticket_form");
-buttonForm.onclick = function () {
+buttonForm.onclick = () => {
   location.href = "contact.html";
 };
 

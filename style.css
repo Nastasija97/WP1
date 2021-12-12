@@ -700,6 +700,10 @@ margin-bottom: 16px;
   color: #393a36;
   transition: 0.4s ease-out;
 }
+.footer_link-items a:after{
+  color: #fff;
+  
+}
 /*Social icons*/
  .social_icon-link{
    color: white;
@@ -732,6 +736,11 @@ margin-bottom: 16px;
   color: #572d74;
   
 }
+.social_icons a:hover:after{
+  
+  color:white;
+}
+
  .social_logo{
    color: #fff;
    justify-self: flex-start;
@@ -781,7 +790,7 @@ margin-bottom: 16px;
 
 .profile{
   box-sizing: border-box;
-  display: flex !important;
+  display: flex ;
   margin:0;
   padding: 0;
   justify-content: center;
@@ -896,6 +905,15 @@ body {
   align-items: center;
   width: 40%;
 
+}
+@media screen and (max-width:480px) {
+  .profile{
+    display: block;
+  }
+  .info{
+    
+    width: 100%;
+  }
 }
 
 /*form */
@@ -1072,5 +1090,15 @@ body {
    @media screen and (max-width: 620px) {
      #slider{
        width: 80%;
+       height: 80%;
      }
    }
+   @media screen and (max-width: 480px) {
+     #slider{
+       margin-top:10vh;
+     }
+    #slider img{
+     width:60%;
+     height:70%;
+    }
+  }
