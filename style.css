@@ -122,7 +122,7 @@
     margin: 0;
     width: 100%;
     position: absolute;
-    top: -100px;
+    top: -500px;
     opacity: 0;
     transition: all 0.5s ease;
     height: 70vh;
@@ -1092,13 +1092,16 @@ body {
        width: 80%;
        height: 80%;
      }
+     #slider img{
+      width: 70%;
+    }
+     
    }
    @media screen and (max-width: 480px) {
      #slider{
        margin-top:10vh;
      }
-    #slider img{
-     width:60%;
-     height:70%;
+     #slider img{
+      width: 50%;
     }
   }
