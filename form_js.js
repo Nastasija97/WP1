@@ -45,7 +45,7 @@ function checkNumber() {
 var ddlYear = document.querySelector("#ddlYear");
 ddlYear.addEventListener("change", checkYear);
 ddlYear.addEventListener("blur", checkYear);
-var ddlYearOptions = [2021, 2022, 2023];
+var ddlYearOptions = [2022, 2023, 2024, 2025];
 ddlYear.innerHTML = '<option value="0">Year</option>';
 for (i in ddlYearOptions) {
   ddlYear.innerHTML += `<option value="${ddlYearOptions[i]}">${ddlYearOptions[i]}</optio
@@ -70,7 +70,20 @@ ddlMonth.addEventListener("change", checkMonth);
 ddlMonth.addEventListener("blur", checkMonth);
 ddlMonth.addEventListener("change", printDays);
 ddlMonth.addEventListener("blur", printDays);
-var ddlMonthOptions = ["January","February", "March", "April","May","June", "July", "August", "September","October","November","December"];
+var ddlMonthOptions = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December"
+];
 ddlMonth.innerHTML = '<option value="0">Month</option>';
 for (i in ddlMonthOptions) {
   ddlMonth.innerHTML += `<option value="${ddlMonthOptions[i]}">${ddlMonthOptions[i]}</op
@@ -208,8 +221,6 @@ $(document).ready(function () {
   });
 });
 
-
-
 // RegExp
 var noErrors;
 
@@ -235,9 +246,9 @@ function checkEmail() {
 var btnSubmitMessage = document.querySelector("#btnSubmitForm");
 btnSubmitMessage.addEventListener("click", function () {
   noErrors = true;
-  checkName();
+
   checkEmail();
-  checkMessage();
+
   if (noErrors) {
     tbName.value = "";
     tbName.classList.remove("borderBlue");
@@ -250,9 +261,7 @@ btnSubmitMessage.addEventListener("click", function () {
   }
 });
 
-
-
-//success modal 
+//success modal
 var bodyTag = document.getElementsByTagName("body")[0];
 var successModal = document.createElement("div");
 successModal.setAttribute("id", "successModal");
@@ -272,26 +281,26 @@ successModal.appendChild(successContainer);
 bodyTag.appendChild(successModal);
 var closeModalTimeout;
 function openSuccessModal(message) {
- successMessageSpan.innerHTML = message;
- successModal.style.display = "block";
- successContainer.style.display = "block";
- var timeoutValue = 0;
- for(let i = -100; i <= 0; i++) {
- setTimeout(function() {
- successCover.style.opacity = `${i+100}%`;
- }, timeoutValue+=1.5);
- }
- closeModalTimeout = setTimeout(closeSuccessModal, 3000);
+  successMessageSpan.innerHTML = message;
+  successModal.style.display = "block";
+  successContainer.style.display = "block";
+  var timeoutValue = 0;
+  for (let i = -100; i <= 0; i++) {
+    setTimeout(function () {
+      successCover.style.opacity = `${i + 100}%`;
+    }, (timeoutValue += 1.5));
+  }
+  closeModalTimeout = setTimeout(closeSuccessModal, 3000);
 }
 successCover.addEventListener("click", closeSuccessModal);
 function closeSuccessModal() {
- successContainer.style.display = "none";
- var timeoutValue = 0;
- for(let i = 0; i >= -100; i--) {
- setTimeout(function() {
- successCover.style.opacity = `${i+100}%`;
- if(i == -100) successModal.style.display = "none";
- }, timeoutValue+=1.5);
- }
- clearTimeout(closeModalTimeout);
+  successContainer.style.display = "none";
+  var timeoutValue = 0;
+  for (let i = 0; i >= -100; i--) {
+    setTimeout(function () {
+      successCover.style.opacity = `${i + 100}%`;
+      if (i == -100) successModal.style.display = "none";
+    }, (timeoutValue += 1.5));
+  }
+  clearTimeout(closeModalTimeout);
 }

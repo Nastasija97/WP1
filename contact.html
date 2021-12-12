@@ -1,138 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
 
-    <meta http-equiv="Content-Language" content="en" />
-    <meta name="Alfa Cosmix" />
-    <meta
-      name="keywords"
-      content="space,,aerospace,,mars,Aurora8,moon,rockets"
-    />
-    <meta
-      name="description"
-      content="Alfa Cosmix designs, manufactures and launches advanced rockets and spacecraft. The company was founded in 2021 to revolutionize space technology, with the ultimate goal of enabling people to live on other planets."
-    />
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Alfa Cosmix" />
-    <meta
-      property="og:description"
-      content="Alfa Cosmix designs, manufactures and launches advanced rockets and spacecraft."
-    />
-    <meta property="og:site_name" content="alfacosmix" />
-    <meta
-      property="og:image"
-      content="https://www.alfacosmix.com/static/images/share.jpg"
-    />
-    <meta itemprop="name" content="Alfa Cosmix" />
-    <meta
-      itemprop="image"
-      content="https://www.alfacosmix.com/static/images/share.jpg"
-    />
-    <meta property="og:url" content="http://www.alfacosmix.com" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alfa Cosmix</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  </head>
-  <body>
-    <!--Navbar section-->
-    <nav class="navbar">
-      <div class="navbar_container">
-        <a href="/index.html" id="navbar_logo" alt="Logo">
-          <i class="fab fa-galactic-senate"></i>
-          Alfa Cosmix</a
-        >
-        <div class="navbar_toggle" id="mobile-menu">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
+<head>
+  <meta charset="UTF-8" />
 
-        <ul class="navbar_menu" id="navbar_menu">
-          <!--JS Part-->
-          <!-- <li class="navbar_btn">
+  <meta http-equiv="Content-Language" content="en" />
+  <meta name="Alfa Cosmix" />
+  <meta name="keywords" content="space,,aerospace,,mars,Aurora8,moon,rockets" />
+  <meta name="description"
+    content="Alfa Cosmix designs, manufactures and launches advanced rockets and spacecraft. The company was founded in 2021 to revolutionize space technology, with the ultimate goal of enabling people to live on other planets." />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Alfa Cosmix" />
+  <meta property="og:description"
+    content="Alfa Cosmix designs, manufactures and launches advanced rockets and spacecraft." />
+  <meta property="og:site_name" content="alfacosmix" />
+  <meta property="og:image" content="https://www.alfacosmix.com/static/images/share.jpg" />
+  <meta itemprop="name" content="Alfa Cosmix" />
+  <meta itemprop="image" content="https://www.alfacosmix.com/static/images/share.jpg" />
+  <meta property="og:url" content="http://www.alfacosmix.com" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alfa Cosmix</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+
+<body>
+  <!--Navbar section-->
+  <nav class="navbar">
+    <div class="navbar_container">
+      <a href="/index.html" id="navbar_logo" alt="Logo">
+        <i class="fab fa-galactic-senate"></i>
+        Alfa Cosmix</a>
+      <div class="navbar_toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+
+      <ul class="navbar_menu" id="navbar_menu">
+        <!--JS Part-->
+        <!-- <li class="navbar_btn">
         <a href="" class="button">Sign Up</a>
       </li> -->
-        </ul>
-      </div>
-    </nav>
-    <!--form section-->
-
-    <div id="bookingForm">
-      <form method="post">
-        <div class="form-group">
-          <label for="tbEmail" class="fontsmall">Email address</label>
-          <input
-            type="email"
-            class="fontsmall"
-            id="tbEmail"
-            placeholder="Your email"
-            autocomplete="off"
-          />
-          <span class="errorMessage fontsmall">examplename@example.com</span>
-        </div>
-        <div class="form-group">
-          <label for="ddlNumber" class="fontsmall">Number of people:</label>
-          <select name="ddlNumber" id="ddlNumber" class="fontsmall"></select>
-          <span class="errorMessage fontsmall">You must choose an option.</span>
-        </div>
-        <div class="form-group">
-          <label for="ddlYear" class="font-small">Date:</label>
-          <div id="ddlDateDiv">
-            
-            <select
-              name="ddlYear"
-              id="ddlYear"
-              class="fontsmall ddlDate"></select>
-            <select
-              name="ddlMonth"
-              id="ddlMonth"
-              class="fontsmall ddlDate"></select>
-            <select
-              name="ddlDay"
-              id="ddlDay"
-              class="fontsmall ddlDate"></select>
-          </div>
-          <span id="dateError" class="errorMessage fontsmall"
-            >You must choose a date.</span
-          >
-        </div>
-        <div class="form-group">
-          <label for="ddlDestination" class="fontsmall">Destination:</label>
-          <select name="ddlDestination" id="ddlDestination" class="f ont-small">
-            <option value="0">Choose</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-          </select>
-          <span class="errorMessage fontsmall"
-            >You must choose a destination.</span
-          >
-        </div>
-        <input
-          type="button"
-          id="btnSubmitForm"
-          name="btnSubmitForm"
-          value="Submit"
-          class="font-small uppercase"
-        />
-      </form>
+      </ul>
     </div>
+  </nav>
+  <!--form section-->
 
-   <!--Footer Section-->
-   <div class="footer_container">
+  <div id="bookingForm">
+    <form method="post">
+      <div class="form-group">
+        <label for="tbEmail" class="fontsmall">Email address</label>
+        <input type="email" class="fontsmall" id="tbEmail" placeholder="Your email" autocomplete="off" />
+        <span class="errorMessage fontsmall">examplename@example.com</span>
+      </div>
+      <div class="form-group">
+        <label for="ddlNumber" class="fontsmall">Number of people:</label>
+        <select name="ddlNumber" id="ddlNumber" class="fontsmall"></select>
+        <span class="errorMessage fontsmall">You must choose an option.</span>
+      </div>
+      <div class="form-group">
+        <label for="ddlYear" class="font-small">Date:</label>
+        <div id="ddlDateDiv">
+
+          <select name="ddlYear" id="ddlYear" class="fontsmall ddlDate"></select>
+          <select name="ddlMonth" id="ddlMonth" class="fontsmall ddlDate"></select>
+          <select name="ddlDay" id="ddlDay" class="fontsmall ddlDate"></select>
+        </div>
+        <span id="dateError" class="errorMessage fontsmall">You must choose a date.</span>
+      </div>
+      <div class="form-group">
+        <label for="ddlDestination" class="fontsmall">Destination:</label>
+        <select name="ddlDestination" id="ddlDestination" class="f ont-small">
+          <option value="0">Choose</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <span class="errorMessage fontsmall">You must choose a destination.</span>
+      </div>
+      <input type="button" id="btnSubmitForm" name="btnSubmitForm" value="Submit" class="font-small uppercase" />
+    </form>
+  </div>
+
+  <!--Footer Section-->
+  <div class="footer_container">
     <div class="footer_links">
       <div class="footer_link-wrapper">
         <div class="footer_link-items">
@@ -147,9 +106,7 @@
           <h2>Contact Us</h2>
           <a href="contact.html">Book Flight</a>
           <a href="/">Rss</a>
-          <a href="docs.pdf"
-            ><i class="fas fa-file-pdf"></i>&nbsp;Documentation</a
-          >
+          <a href="docs.pdf"><i class="fas fa-file-pdf"></i>&nbsp;Documentation</a>
           <a href="author.html"><i class="far fa-user"></i>&nbsp;Author</a>
           <a href="sitemap.txt"><i class="fas fa-sitemap"></i>&nbsp;Sitemap</a>
         </div>
@@ -176,9 +133,7 @@
     <div class="social_media">
       <div class="social_media-wrap">
         <div class="footer_logo">
-          <a href="/" id="footer_logo"
-            ><i class="fab fa-galactic-senate"></i>Alfa Cosmix</a
-          >
+          <a href="index.html" id="footer_logo"><i class="fab fa-galactic-senate"></i>Alfa Cosmix</a>
         </div>
         <p class="website_rights">
           &copy;Alfa Cosmix 2021. Allrights reserved
@@ -204,10 +159,11 @@
     </div>
   </div>
 
- 
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="form_js.js"></script>
-    <script src="main.js"></script>
-  </body>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="form_js.js"></script>
+  <script src="main.js"></script>
+</body>
+
 </html>
